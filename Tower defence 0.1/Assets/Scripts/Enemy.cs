@@ -12,7 +12,6 @@ public class Enemy : MonoBehaviour
     [SerializeField]
     NavMeshAgent agent;
     private Transform targetMarker;
-    private Transform prefab;
     public int Damage = 1;
     public int GoldForEnemy;
     public float MainAgentSpeed;

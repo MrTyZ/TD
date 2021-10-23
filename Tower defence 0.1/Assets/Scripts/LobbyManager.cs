@@ -11,6 +11,7 @@ public class LobbyManager : MonoBehaviourPunCallbacks, IPunObservable
     public GameObject joinbtn;
     public GameObject hostform;
     public GameObject RoomName;
+    public GameObject RoomNameEnter;
     public bool connected;
 
     MenuButtons menubtn = new MenuButtons();
@@ -31,7 +32,7 @@ public class LobbyManager : MonoBehaviourPunCallbacks, IPunObservable
         hostbtn.SetActive(false);
         joinbtn.SetActive(false);
         hostform.SetActive(true);
-        RoomName.SetActive(false);
+        RoomNameEnter.SetActive(false);
         menubtn.swapmapinfinity();
     }
     public void CreateFinalRoom()
@@ -42,7 +43,11 @@ public class LobbyManager : MonoBehaviourPunCallbacks, IPunObservable
     public void JoinRoom()
     {
         globalvariable.online = true;
-        PhotonNetwork.JoinRoom(RoomName.GetComponent<Text>().text);
+        if (RoomName.GetComponent<Text>().text != null)
+        {
+            PhotonNetwork.JoinRoom(RoomName.GetComponent<Text>().text);
+        }
+        else {GameObject.Find("MultiplayerText").GetComponent<Text>().text = localisationSystem.GetLocalisedValue("ConnError"); StartCoroutine(Pause()); }
     }
     public override void OnJoinedRoom()
     {
@@ -55,7 +60,7 @@ public class LobbyManager : MonoBehaviourPunCallbacks, IPunObservable
         hostbtn.SetActive(true);
         joinbtn.SetActive(true);
         hostform.SetActive(false);
-        RoomName.SetActive(true);
+        RoomNameEnter.SetActive(true);
     }
 
     public override void OnConnectedToMaster()
@@ -75,5 +80,10 @@ public class LobbyManager : MonoBehaviourPunCallbacks, IPunObservable
         {
             MenuButtons.SelectArray = (int)stream.ReceiveNext();
         }
+    }
+    IEnumerator Pause()
+    {
+        yield return new WaitForSeconds(2f);
+        GameObject.Find("MultiplayerText").GetComponent<Text>().text = "";
     }
 }

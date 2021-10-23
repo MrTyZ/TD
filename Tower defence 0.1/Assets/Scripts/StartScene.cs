@@ -31,8 +31,7 @@ public class StartScene : MonoBehaviour
             GameObject.Find("log").GetComponent<Text>().text += "Online " + globalvariable.online + "\n";
         }
 
-        if (!PhotonNetwork.IsMasterClient)
-        { GameObject.Find("NextWave").SetActive(false); }
+        
 
 
     }

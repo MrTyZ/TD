@@ -18,17 +18,25 @@ public class SpawnTower : MonoBehaviour
         GameObject.Find("Main text").GetComponent<Text>().text = localisationSystem.GetLocalisedValue("placeforbuild");
         StartCoroutine(Pause());
     }
-    public void Spawn_air()
+
+    void Spawntower(string NameTower)
     {
         if (GameObject.Find("buy_active(Clone)") != null)
         {
             if (Gold.gold >= 100)
             {
-                PhotonNetwork.Instantiate("Tower_Air_1", GameObject.Find("buy_active(Clone)").transform.position, Quaternion.identity);
-                //Instantiate(Resources.Load<Transform>("Prefabs/Tower_Air_1"), GameObject.Find("buy_active(Clone)").transform.position, Quaternion.identity);
-                Gold.gold -= 100;
-                PhotonNetwork.Destroy(GameObject.Find("buy_active(Clone)"));
-                //Destroy(GameObject.Find("buy_active(Clone)"), .0f);
+                if (globalvariable.online)
+                {
+                    PhotonNetwork.Instantiate(NameTower, GameObject.Find("buy_active(Clone)").transform.position, Quaternion.identity);
+                    Gold.gold -= 100;
+                    PhotonNetwork.Destroy(GameObject.Find("buy_active(Clone)"));
+                }
+                else
+                {
+                    Instantiate(Resources.Load<Transform>(NameTower), GameObject.Find("buy_active(Clone)").transform.position, Quaternion.identity);
+                    Destroy(GameObject.Find("buy_active(Clone)"), .0f);
+                }
+             
             }
             else
             {
@@ -39,69 +47,27 @@ public class SpawnTower : MonoBehaviour
         {
             BuildError();
         }
+    }
+    public void Spawn_air()
+    {
+        string NameTower = "Tower_Air_1";
+        Spawntower(NameTower);
 
     }
     public void Spawn_fire()
     {
-        if (GameObject.Find("buy_active(Clone)") != null)
-        {
-            if (Gold.gold >= 100)
-            {
-                Instantiate(Resources.Load<Transform>("Prefabs/Tower_Fire_1"), GameObject.Find("buy_active(Clone)").transform.position, Quaternion.identity);
-                Gold.gold -= 100;
-                Destroy(GameObject.Find("buy_active(Clone)"), .0f);
-            }
-            else
-            {
-                NoMoney();
-            }
-        }
-        else
-        {
-            BuildError();
-        }
-
+        string NameTower = "Tower_Fire_1";
+        Spawntower(NameTower);
     }
     public void Spawn_ground()
     {
-        if (GameObject.Find("buy_active(Clone)") != null)
-        {
-            if (Gold.gold >= 100)
-            {
-                Instantiate(Resources.Load<Transform>("Prefabs/Tower_Ground_1"), GameObject.Find("buy_active(Clone)").transform.position, Quaternion.identity);
-                Gold.gold -= 100;
-                Destroy(GameObject.Find("buy_active(Clone)"), .0f);
-            }
-            else
-            {
-                NoMoney();
-            }
-        }
-        else
-        {
-            BuildError();
-        }
-
+        string NameTower = "Tower_Ground_1";
+        Spawntower(NameTower);
     }
     public void Spawn_water()
     {
-        if (GameObject.Find("buy_active(Clone)") != null)
-        {
-            if (Gold.gold >= 100)
-            {
-                Instantiate(Resources.Load<Transform>("Prefabs/Tower_water_1"), GameObject.Find("buy_active(Clone)").transform.position, Quaternion.identity);
-                Gold.gold -= 100;
-                Destroy(GameObject.Find("buy_active(Clone)"), .0f);
-            }
-            else
-            {
-                NoMoney();
-            }
-        }
-        else
-        {
-            BuildError();
-        }
+        string NameTower = "Tower_water_1";
+        Spawntower(NameTower);
     }
 
     

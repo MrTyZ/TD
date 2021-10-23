@@ -17,8 +17,8 @@ public class NewTower : MonoBehaviour
         if (gameObject.name != "buy_active(Clone)")
         {
             if (!globalvariable.online)
-             {
-          
+            {
+
                 Instantiate(Resources.Load<Transform>("buy_active"), transform.position, Quaternion.identity);
                 Destroy(gameObject, .0f);
             }
@@ -26,7 +26,10 @@ public class NewTower : MonoBehaviour
             {
                 PhotonNetwork.Instantiate("buy_active", transform.position, Quaternion.identity);
                 GameObject.Find("log").GetComponent<Text>().text += "Del " + gameObject.name + "\n";
-                PhotonNetwork.Destroy(gameObject);
+                if (gameObject.GetComponent<PhotonView>().IsMine)
+                {
+                    PhotonNetwork.Destroy(gameObject);
+                }
             }
            
   

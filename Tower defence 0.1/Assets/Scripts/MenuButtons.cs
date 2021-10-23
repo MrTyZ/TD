@@ -25,8 +25,10 @@ public class MenuButtons : MonoBehaviour
             Time.timeScale = 1;
             //Загрузка натсроек из реестра
             Background.GetComponent<RawImage>().enabled = true;
-            if (PlayerPrefs.GetInt("language") == 0) { localisationSystem.language = localisationSystem.Language.English; GameObject.Find("TextLanguage").GetComponent<Text>().text = "Language: English"; }
-            else { localisationSystem.language = localisationSystem.Language.Russian; GameObject.Find("TextLanguage").GetComponent<Text>().text = "Язык: Русский"; }
+            if (PlayerPrefs.GetInt("language") == 0) { localisationSystem.language = localisationSystem.Language.English;
+            GameObject.Find("TextLanguage").GetComponent<Text>().text = "Language: English"; }
+            else { localisationSystem.language = localisationSystem.Language.Russian;
+            GameObject.Find("TextLanguage").GetComponent<Text>().text = "Язык: Русский"; }
 
             trialsCounterEnd = PlayerPrefs.GetInt("Trial");
             for (int i = 0; i < trialsCounterEnd; i++)
@@ -115,7 +117,8 @@ public class MenuButtons : MonoBehaviour
         GameObject.Find("TextWave3").GetComponent<Text>().text = localisationSystem.GetLocalisedValue("maxwave") + PlayerPrefs.GetInt("maxwave3");
         GameObject.Find("TextWave4").GetComponent<Text>().text = localisationSystem.GetLocalisedValue("maxwave") + PlayerPrefs.GetInt("maxwave4");
         GameObject.Find("TextWave5").GetComponent<Text>().text = localisationSystem.GetLocalisedValue("maxwave") + PlayerPrefs.GetInt("maxwave5");
-        GameObject.Find("TextCounterTrial").GetComponent<Text>().text = localisationSystem.GetLocalisedValue("counttrial") + (PlayerPrefs.GetInt("Trial")-1) + "/32";
+        if ((PlayerPrefs.GetInt("Trial") - 1 < 0)) { GameObject.Find("TextCounterTrial").GetComponent<Text>().text = localisationSystem.GetLocalisedValue("counttrial") + 0 + "/32"; }
+        else { GameObject.Find("TextCounterTrial").GetComponent<Text>().text = localisationSystem.GetLocalisedValue("counttrial") + (PlayerPrefs.GetInt("Trial") - 1) + "/32"; }
     }
     public void Trial()
     {
