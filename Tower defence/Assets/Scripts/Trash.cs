@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
 public class Trash : MonoBehaviour
 {
@@ -120,12 +121,21 @@ public class Trash : MonoBehaviour
                     { }
                     break;
             }
+            if (globalvariable.online) {
+            PhotonNetwork.Instantiate("Buy", GameObject.FindGameObjectWithTag("Active_tower").transform.position, Quaternion.identity);
+            PhotonNetwork.Destroy(GameObject.FindGameObjectWithTag("Active_tower"));
+            }
+            else {
+                Instantiate(Resources.Load<Transform>("Buy"), GameObject.FindGameObjectWithTag("Active_tower").transform.position, Quaternion.identity);
+                Destroy(GameObject.FindGameObjectWithTag("Active_tower"), .0f);
+            }
             Gold.gold += goldsel;
-            Instantiate(Resources.Load<Transform>("Prefabs/Buy"), GameObject.FindGameObjectWithTag("Active_tower").transform.position, Quaternion.identity);
-            Destroy(GameObject.FindGameObjectWithTag("Active_tower"), .0f);
             cancel.Cancel();
-            
+            Destroy(GameObject.Find("Sphere(Clone)"), .0f);
+
+
         }
         
     }
+    
 }

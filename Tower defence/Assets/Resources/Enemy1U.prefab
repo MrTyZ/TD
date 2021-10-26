@@ -749,6 +749,7 @@ GameObject:
   - component: {fileID: 114325150859454808}
   - component: {fileID: 3155180290146644709}
   - component: {fileID: 4136810071981084057}
+  - component: {fileID: 114450730126432930}
   m_Layer: 10
   m_Name: Enemy1U
   m_TagString: Enemy
@@ -840,7 +841,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 8371372193551991179}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.49999997
+  m_Radius: 1
   m_Speed: 1.5
   m_Acceleration: 8
   avoidancePriority: 50
@@ -850,7 +851,7 @@ NavMeshAgent:
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 1.9999999
-  m_BaseOffset: 0
+  m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
 --- !u!54 &5140857266046986519
@@ -907,6 +908,7 @@ MonoBehaviour:
   observableSearch: 2
   ObservedComponents:
   - {fileID: 4136810071981084057}
+  - {fileID: 114450730126432930}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -926,3 +928,19 @@ MonoBehaviour:
   m_SynchronizeRotation: 1
   m_SynchronizeScale: 1
   m_UseLocal: 1
+--- !u!114 &114450730126432930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8371372193551991179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64179f3720bbfe947b7724caa67b7c1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizeVelocity: 1
+  m_SynchronizeAngularVelocity: 0
+  m_TeleportEnabled: 0
+  m_TeleportIfDistanceGreaterThan: 3

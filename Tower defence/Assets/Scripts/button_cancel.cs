@@ -43,20 +43,10 @@ public class button_cancel : MonoBehaviour
             
 
         }
-        if (GameObject.Find("buy_active(Clone)") != null) //Очистка, если была активная платформа для покупки
+        if (GameObject.FindGameObjectWithTag("Active_buy") != null) 
         {
-            if (!globalvariable.online)
-            {
-                Instantiate(Resources.Load<Transform>("Buy"), GameObject.Find("buy_active(Clone)").transform.position, Quaternion.identity); // Создание синей платформы на корды красной
-                Destroy(GameObject.Find("buy_active(Clone)"), .0f); // Удаление красной платформы
-            }
-            else
-            {
-                PhotonNetwork.Instantiate("Buy", GameObject.Find("buy_active(Clone)").transform.position, Quaternion.identity); // Создание синей платформы на корды красной
-                PhotonNetwork.Destroy(GameObject.Find("buy_active(Clone)")); // Удаление красной платформы
-            }
-           
-           
+            GameObject.FindGameObjectWithTag("Active_buy").GetComponent<NewTower>().isActive = false;
+            GameObject.FindGameObjectWithTag("Active_buy").tag = "Buy";
         }
         
     }

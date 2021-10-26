@@ -14,28 +14,28 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMultiplayer.unity
     guid: 0f2cb30bba0c3b949beb2aa0714d0741
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Trial1.unity
     guid: 9e12f4453da56be42924332202cf10b4
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Trial2.unity
     guid: 887995bb64eebd64bbfd181cf6aeea2f
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Trial3.unity
     guid: 08f34a63af0a4b04497507eb781490d1
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Trial4.unity
     guid: 357b3f21d2334fb46a8b699f30d4e874
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Trial5.unity
     guid: 57ed245836fb5074781e4ca9fbc9c134
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Trial6.unity
     guid: 284e748332a96924a86e5827663b00e5
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Trial7.unity
     guid: 61962b6c899b5b042a9194a611d9587e
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Trial8.unity
     guid: 6c660c162f3205b4d8730ec67dba0572
   m_configObjects: {}

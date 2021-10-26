@@ -6,7 +6,6 @@ using UnityEngine.UI;
 
 public class LobbyManager : MonoBehaviourPunCallbacks, IPunObservable
 {
-    public GameObject log;
     public GameObject hostbtn;
     public GameObject joinbtn;
     public GameObject hostform;
@@ -19,7 +18,6 @@ public class LobbyManager : MonoBehaviourPunCallbacks, IPunObservable
     void Start()
     {
         PhotonNetwork.NickName = "Player" + Random.Range(1, 9999);
-        log.GetComponent<Text>().text += PhotonNetwork.NickName+"\n";
         print(PhotonNetwork.NickName);
 
         PhotonNetwork.GameVersion = "0.7";
@@ -35,11 +33,14 @@ public class LobbyManager : MonoBehaviourPunCallbacks, IPunObservable
         RoomNameEnter.SetActive(false);
         menubtn.swapmapinfinity();
     }
+    int SelectArrayNow;
     public void CreateFinalRoom()
     {
         globalvariable.online = true;
         PhotonNetwork.CreateRoom(RoomName.GetComponent<Text>().text, new Photon.Realtime.RoomOptions { MaxPlayers = 2 });
+
     }
+   
     public void JoinRoom()
     {
         globalvariable.online = true;
@@ -51,7 +52,7 @@ public class LobbyManager : MonoBehaviourPunCallbacks, IPunObservable
     }
     public override void OnJoinedRoom()
     {
-        log.GetComponent<Text>().text += PhotonNetwork.NickName + "join";
+        StartScene.SelectMap = MenuButtons.SelectArray;
         PhotonNetwork.LoadLevel("MainMultiplayer");
        
     }
@@ -66,7 +67,6 @@ public class LobbyManager : MonoBehaviourPunCallbacks, IPunObservable
     public override void OnConnectedToMaster()
     {
         print("Connected to master");
-        log.GetComponent<Text>().text += "Connected to master\n";
     }
 
    

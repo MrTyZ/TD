@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using Photon.Pun;
 
-public class NewEnemy : MonoBehaviour
+public class NewEnemy : MonoBehaviourPun
 {
     public GameObject enemy1;
     public GameObject enemy2;
@@ -28,6 +28,7 @@ public class NewEnemy : MonoBehaviour
 
     private void Start()
     {
+        PhotonView photonView = PhotonView.Get(this);
         Wave = 1;
         wave = 1;
         nextwave = 20;
@@ -67,7 +68,10 @@ public class NewEnemy : MonoBehaviour
            
             if ((wave == 20) && (a == false))
             {
-                a = true; Wave++; Gold.gold += 30;
+                a = true; Wave++;
+                if (globalvariable.online) { photonView.RPC("GetMoney", RpcTarget.All, null); }
+                else { Gold.gold += 30; }
+                
                 if (Wave % 5 == 0) { globalvariable.MobModSpeed += 0.3F; mobr = Random.Range(1, 5); }
 
                 if (Wave < 10)//Волны до 10 волны
@@ -155,5 +159,10 @@ public class NewEnemy : MonoBehaviour
 
         }
 
+    }
+    [PunRPC]
+    private void GetMoney()
+    {
+        Gold.gold += 15;
     }
 }

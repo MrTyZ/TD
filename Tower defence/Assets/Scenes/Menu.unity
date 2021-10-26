@@ -992,7 +992,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -0.000061035156, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 70, y: 80}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &68634924
@@ -1588,7 +1588,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &114915455
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2524,7 +2524,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &253156179
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2602,7 +2602,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06e9eea65b27c8b448205fbeee8823a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key: comingsoon
+  key: multiplayer
 --- !u!114 &268507834
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2623,7 +2623,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 8b2492e8f9dd43840a7dc8cd9ab3f2d6, type: 3}
-    m_FontSize: 60
+    m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -2634,7 +2634,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Comingsoon
+  m_Text: multiplayer
 --- !u!222 &268507835
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8492,7 +8492,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1016495946
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10840,7 +10840,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1336459777
 RectTransform:
   m_ObjectHideFlags: 0
@@ -14498,13 +14498,14 @@ GameObject:
   m_Component:
   - component: {fileID: 1948481005}
   - component: {fileID: 1948481006}
+  - component: {fileID: 1948481007}
   m_Layer: 5
   m_Name: Multiplayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1948481005
 RectTransform:
   m_ObjectHideFlags: 0
@@ -14546,13 +14547,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8522203e61a33e24dbfbdd2e960ea5ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  log: {fileID: 1133945702}
   hostbtn: {fileID: 242655706}
   joinbtn: {fileID: 80166734}
   hostform: {fileID: 2099729434}
   RoomName: {fileID: 1390420545}
   RoomNameEnter: {fileID: 1776631429}
   connected: 0
+--- !u!114 &1948481007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1948481004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents:
+  - {fileID: 1948481006}
+  sceneViewId: 1
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &1955980491
 GameObject:
   m_ObjectHideFlags: 0

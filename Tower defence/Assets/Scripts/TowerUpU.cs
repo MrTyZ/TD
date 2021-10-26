@@ -3,23 +3,35 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Photon.Pun;
 
 public class TowerUpU : MonoBehaviour
 {
     button_cancel cancel = new button_cancel();
-
-    public void LevelUpWaterU1()
+    string nameTower;
+    string namePrefab;
+    int coast;
+    public void Up_Tower_U(string nameTower, string namePrefab, int coast)
     {
         if (GameObject.FindGameObjectWithTag("Active_tower") != null)
         {
-            if (Active_tower.ClassLevel_Tower == "Water3")
+            if (Active_tower.ClassLevel_Tower == nameTower)
             {
-                if (Gold.gold >= 400)
+                if (Gold.gold >= coast)
                 {
-                    Instantiate(Resources.Load<Transform>("Prefabs/Tower_WaterU_1"), GameObject.FindGameObjectWithTag("Active_tower").transform.position, Quaternion.identity);
-                    Destroy(GameObject.FindGameObjectWithTag("Active_tower"), .0f);
+                    if (globalvariable.online)
+                    {
+                        PhotonNetwork.Instantiate(namePrefab, GameObject.FindGameObjectWithTag("Active_tower").transform.position, Quaternion.identity);
+                        PhotonNetwork.Destroy(GameObject.FindGameObjectWithTag("Active_tower"));
+                    }
+                    else
+                    {
+                        Instantiate(Resources.Load<Transform>(namePrefab), GameObject.FindGameObjectWithTag("Active_tower").transform.position, Quaternion.identity);
+                        Destroy(GameObject.FindGameObjectWithTag("Active_tower"), .0f);
+                    }
+
                     Destroy(GameObject.Find("Sphere(Clone)"), .0f);
-                    Gold.gold -= 400;
+                    Gold.gold -= coast;
                 }
                 else
                 {
@@ -28,176 +40,40 @@ public class TowerUpU : MonoBehaviour
 
                 }
             }
-
         }
         cancel.Cancel();
+    }
+    public void LevelUpWaterU1()
+    {
+        nameTower = "Water3"; namePrefab = "Tower_WaterU_1"; coast = 400; Up_Tower_U(nameTower, namePrefab, coast);
     }
     public void LevelUpWaterU2()
     {
-        if (GameObject.FindGameObjectWithTag("Active_tower") != null)
-        {
-            if (Active_tower.ClassLevel_Tower == "Water3")
-            {
-                if (Gold.gold >= 400)
-                {
-                    Instantiate(Resources.Load<Transform>("Prefabs/Tower_WaterU_2"), GameObject.FindGameObjectWithTag("Active_tower").transform.position, Quaternion.identity);
-                    Destroy(GameObject.FindGameObjectWithTag("Active_tower"), .0f);
-                    Destroy(GameObject.Find("Sphere(Clone)"), .0f);
-                    Gold.gold -= 400;
-                }
-                else
-                {
-                    GameObject.Find("Main text").GetComponent<Text>().color = new Color(150, 0, 0);
-                    nomoney();
-
-                }
-            }
-
-        }
-        cancel.Cancel();
+        nameTower = "Water3"; namePrefab = "Tower_WaterU_2"; coast = 400; Up_Tower_U(nameTower, namePrefab, coast);
     }
     public void LevelUpFireU1()
     {
-        if (GameObject.FindGameObjectWithTag("Active_tower") != null)
-        {
-            if (Active_tower.ClassLevel_Tower == "Fire3")
-            {
-                if (Gold.gold >= 400)
-                {
-                    Instantiate(Resources.Load<Transform>("Prefabs/Tower_FireU_1"), GameObject.FindGameObjectWithTag("Active_tower").transform.position, Quaternion.identity);
-                    Destroy(GameObject.FindGameObjectWithTag("Active_tower"), .0f);
-                    Destroy(GameObject.Find("Sphere(Clone)"), .0f);
-                    Gold.gold -= 400;
-                }
-                else
-                {
-                    GameObject.Find("Main text").GetComponent<Text>().color = new Color(150, 0, 0);
-                    nomoney();
-                }
-            }
-           
-        }
-        cancel.Cancel();
+        nameTower = "Fire3"; namePrefab = "Tower_FireU_1"; coast = 400; Up_Tower_U(nameTower, namePrefab, coast);
     }
     public void LevelUpFireU2()
     {
-        if (GameObject.FindGameObjectWithTag("Active_tower") != null)
-        {
-            if (Active_tower.ClassLevel_Tower == "Fire3")
-            {
-                if (Gold.gold >= 400)
-                {
-                    Instantiate(Resources.Load<Transform>("Prefabs/Tower_FireU_2"), GameObject.FindGameObjectWithTag("Active_tower").transform.position, Quaternion.identity);
-                    Destroy(GameObject.FindGameObjectWithTag("Active_tower"), .0f);
-                    Destroy(GameObject.Find("Sphere(Clone)"), .0f);
-                    Gold.gold -= 400;
-                }
-                else
-                {
-                    GameObject.Find("Main text").GetComponent<Text>().color = new Color(150, 0, 0);
-                    nomoney();
-
-                }
-            }
-
-        }
-        cancel.Cancel();
+        nameTower = "Fire3"; namePrefab = "Tower_FireU_2"; coast = 400; Up_Tower_U(nameTower, namePrefab, coast);
     }
     public void LevelUpAirU1()
     {
-        if (GameObject.FindGameObjectWithTag("Active_tower") != null)
-        {
-            if (Active_tower.ClassLevel_Tower == "Air3")
-            {
-                if (Gold.gold >= 400)
-                {
-                    Instantiate(Resources.Load<Transform>("Prefabs/Tower_AirU_1"), GameObject.FindGameObjectWithTag("Active_tower").transform.position, Quaternion.identity);
-                    Destroy(GameObject.FindGameObjectWithTag("Active_tower"), .0f);
-                    Destroy(GameObject.Find("Sphere(Clone)"), .0f);
-                    Gold.gold -= 400;
-                }
-                else
-                {
-                    GameObject.Find("Main text").GetComponent<Text>().color = new Color(150, 0, 0);
-                    nomoney();
-
-                }
-            }
-
-        }
-        cancel.Cancel();
+        nameTower = "Air3"; namePrefab = "Tower_AirU_1"; coast = 400; Up_Tower_U(nameTower, namePrefab, coast);
     }
     public void LevelUpAirU2()
     {
-        if (GameObject.FindGameObjectWithTag("Active_tower") != null)
-        {
-            if (Active_tower.ClassLevel_Tower == "Air3")
-            {
-                if (Gold.gold >= 400)
-                {
-                    Instantiate(Resources.Load<Transform>("Prefabs/Tower_AirU_2"), GameObject.FindGameObjectWithTag("Active_tower").transform.position, Quaternion.identity);
-                    Destroy(GameObject.FindGameObjectWithTag("Active_tower"), .0f);
-                    Destroy(GameObject.Find("Sphere(Clone)"), .0f);
-                    Gold.gold -= 400;
-                }
-                else
-                {
-                    GameObject.Find("Main text").GetComponent<Text>().color = new Color(150, 0, 0);
-                    nomoney();
-
-                }
-            }
-
-        }
-        cancel.Cancel();
+        nameTower = "Air3"; namePrefab = "Tower_AirU_2"; coast = 400; Up_Tower_U(nameTower, namePrefab, coast);
     }
     public void LevelUpGroundU1()
     {
-        if (GameObject.FindGameObjectWithTag("Active_tower") != null)
-        {
-            if (Active_tower.ClassLevel_Tower == "Ground3")
-            {
-                if (Gold.gold >= 400)
-                {
-                    Instantiate(Resources.Load<Transform>("Prefabs/Tower_GroundU_1"), GameObject.FindGameObjectWithTag("Active_tower").transform.position, Quaternion.identity);
-                    Destroy(GameObject.FindGameObjectWithTag("Active_tower"), .0f);
-                    Destroy(GameObject.Find("Sphere(Clone)"), .0f);
-                    Gold.gold -= 400;
-                }
-                else
-                {
-                    GameObject.Find("Main text").GetComponent<Text>().color = new Color(150, 0, 0);
-                    nomoney();
-
-                }
-            }
-
-        }
-        cancel.Cancel();
+        nameTower = "Ground3"; namePrefab = "Tower_GroundU_1"; coast = 400; Up_Tower_U(nameTower, namePrefab, coast);
     }
     public void LevelUpGroundU2()
     {
-        if (GameObject.FindGameObjectWithTag("Active_tower") != null)
-        {
-            if (Active_tower.ClassLevel_Tower == "Ground3")
-            {
-                if (Gold.gold >= 400)
-                {
-                    Instantiate(Resources.Load<Transform>("Prefabs/Tower_GroundU_2"), GameObject.FindGameObjectWithTag("Active_tower").transform.position, Quaternion.identity);
-                    Destroy(GameObject.FindGameObjectWithTag("Active_tower"), .0f);
-                    Destroy(GameObject.Find("Sphere(Clone)"), .0f);
-                    Gold.gold -= 400;
-                }
-                else
-                {
-                    GameObject.Find("Main text").GetComponent<Text>().color = new Color(150, 0, 0);
-                    nomoney();
-
-                }
-            }
-
-        }
-        cancel.Cancel();
+        nameTower = "Ground3"; namePrefab = "Tower_GroundU_2"; coast = 400; Up_Tower_U(nameTower, namePrefab, coast);
     }
 
     private void nomoney()

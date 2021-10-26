@@ -21,20 +21,20 @@ public class SpawnTower : MonoBehaviour
 
     void Spawntower(string NameTower)
     {
-        if (GameObject.Find("buy_active(Clone)") != null)
+        if (GameObject.FindGameObjectWithTag("Active_buy") != null)
         {
             if (Gold.gold >= 100)
             {
                 if (globalvariable.online)
                 {
-                    PhotonNetwork.Instantiate(NameTower, GameObject.Find("buy_active(Clone)").transform.position, Quaternion.identity);
+                    PhotonNetwork.Instantiate(NameTower, GameObject.FindGameObjectWithTag("Active_buy").transform.position, Quaternion.identity);
                     Gold.gold -= 100;
-                    PhotonNetwork.Destroy(GameObject.Find("buy_active(Clone)"));
+                    PhotonNetwork.Destroy(GameObject.FindGameObjectWithTag("Active_buy"));
                 }
                 else
                 {
-                    Instantiate(Resources.Load<Transform>(NameTower), GameObject.Find("buy_active(Clone)").transform.position, Quaternion.identity);
-                    Destroy(GameObject.Find("buy_active(Clone)"), .0f);
+                    Instantiate(Resources.Load<Transform>(NameTower), GameObject.FindGameObjectWithTag("Active_buy").transform.position, Quaternion.identity);
+                    Destroy(GameObject.FindGameObjectWithTag("Active_buy"), .0f);
                 }
              
             }

@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using Photon.Pun;
 
-public class NextWave : MonoBehaviour
+public class NextWave : MonoBehaviourPun
 {
    public static bool start = false;
     private void Start()
@@ -12,6 +12,7 @@ public class NextWave : MonoBehaviour
         start = false;
         if ((!PhotonNetwork.IsMasterClient) && (globalvariable.online))
         { GameObject.Find("NextWave").SetActive(false); }
+        PhotonView photonView = PhotonView.Get(this);
     }
     public void nextwave()
     {
@@ -22,8 +23,15 @@ public class NextWave : MonoBehaviour
           NewEnemy.wave = 20;
           NewEnemy.timerWave = 0;
           NewEnemy.a = false;
-            Gold.gold += 20;
+            if (globalvariable.online) { photonView.RPC("GetMoney", RpcTarget.All, null); }
+            else { Gold.gold += 20; }
+          
         }
+    }
+    [PunRPC]
+    private void GetMoney()
+    {
+        Gold.gold += 10;
     }
     void Update()
     {

@@ -226,6 +226,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 386
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &17185784 stripped
@@ -552,6 +557,7 @@ GameObject:
   - component: {fileID: 32231813}
   - component: {fileID: 32231812}
   - component: {fileID: 32231811}
+  - component: {fileID: 32231816}
   m_Layer: 0
   m_Name: Final
   m_TagString: Final
@@ -657,6 +663,28 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 32231809}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &32231816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 32231809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 395
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &38287795
 GameObject:
   m_ObjectHideFlags: 0
@@ -667,6 +695,7 @@ GameObject:
   m_Component:
   - component: {fileID: 38287796}
   - component: {fileID: 38287797}
+  - component: {fileID: 38287798}
   m_Layer: 0
   m_Name: StartScene
   m_TagString: Untagged
@@ -700,6 +729,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fbc65a3bb2d2114d8f4ea0e1c10a247, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &38287798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 38287795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents:
+  - {fileID: 38287797}
+  sceneViewId: 398
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1001 &42379443
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -781,6 +833,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 385
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -1312,6 +1369,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 384
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &64423939 stripped
@@ -1402,6 +1464,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (45)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 383
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &69399729 stripped
@@ -1491,6 +1558,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 382
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -1673,6 +1745,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 381
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &89732352 stripped
@@ -1853,6 +1930,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 380
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -2210,6 +2292,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 379
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &131093722 stripped
@@ -2441,6 +2528,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 378
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &135697135 stripped
@@ -2530,6 +2622,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 377
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -2761,6 +2858,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 376
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &179805411 stripped
@@ -2942,6 +3044,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 375
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &184790638 stripped
@@ -3103,6 +3210,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 374
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &199680462 stripped
@@ -3193,6 +3305,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 373
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &201632141 stripped
@@ -3282,6 +3399,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 372
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -3473,6 +3595,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 371
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &210109143 stripped
@@ -3634,6 +3761,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 370
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &213022087 stripped
@@ -3723,6 +3855,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 369
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -3814,6 +3951,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 368
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &225960164 stripped
@@ -3832,6 +3974,7 @@ GameObject:
   m_Component:
   - component: {fileID: 229429061}
   - component: {fileID: 229429062}
+  - component: {fileID: 229429063}
   m_Layer: 0
   m_Name: Start
   m_TagString: Start
@@ -3870,11 +4013,33 @@ MonoBehaviour:
   enemy3: {fileID: 8735896012288617056, guid: ff38dfc21719f514496957e14085dca8, type: 3}
   enemy4: {fileID: 3313652846954529429, guid: 7ef09b9ea745435449764fa749da83e5, type: 3}
   enemy5: {fileID: 5469203335691211642, guid: 96eeb3f770c4c89488fcb175fbcc2d27, type: 3}
-  enemy1U: {fileID: 0}
-  enemy2U: {fileID: 0}
-  enemy3U: {fileID: 0}
-  enemy4U: {fileID: 0}
-  enemy5U: {fileID: 0}
+  enemy1U: {fileID: 8371372193551991179, guid: 9f3e683880cedde44a2577a51cd10c79, type: 3}
+  enemy2U: {fileID: 8966757087193971610, guid: 8c15c570d33529147a5dd9dc602f0975, type: 3}
+  enemy3U: {fileID: 8735896012288617056, guid: bb520a30398dcb64bb0df1d14cb3590f, type: 3}
+  enemy4U: {fileID: 3313652846954529429, guid: 055ef2991e9ac944f9f213a040788e58, type: 3}
+  enemy5U: {fileID: 5469203335691211642, guid: 31c83f3ed5f2fcc408067aea4cdec8e7, type: 3}
+--- !u!114 &229429063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 229429060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 392
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1001 &233566055
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3956,6 +4121,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 367
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -4264,6 +4434,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 366
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &258389134 stripped
@@ -4372,7 +4547,6 @@ RectTransform:
   - {fileID: 1473961997}
   - {fileID: 407294192}
   - {fileID: 1621534378}
-  - {fileID: 1390601366}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4462,6 +4636,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 365
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -4715,6 +4894,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 364
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &281292997 stripped
@@ -4804,6 +4988,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 363
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -5090,6 +5279,7 @@ GameObject:
   - component: {fileID: 311691646}
   - component: {fileID: 311691645}
   - component: {fileID: 311691644}
+  - component: {fileID: 311691649}
   m_Layer: 0
   m_Name: Final
   m_TagString: Final
@@ -5195,6 +5385,28 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 311691642}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &311691649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 311691642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 396
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1001 &312986066
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5585,6 +5797,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 362
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &321859372 stripped
@@ -5674,6 +5891,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 361
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -5765,6 +5987,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 360
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &324596375 stripped
@@ -5855,6 +6082,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 359
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &329153232 stripped
@@ -5944,6 +6176,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 358
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -6251,6 +6488,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 357
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -6731,6 +6973,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 356
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &356030129 stripped
@@ -6820,6 +7067,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 355
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -7153,6 +7405,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 354
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &379460511 stripped
@@ -7252,6 +7509,7 @@ GameObject:
   - component: {fileID: 388177664}
   - component: {fileID: 388177663}
   - component: {fileID: 388177668}
+  - component: {fileID: 388177669}
   m_Layer: 0
   m_Name: Final
   m_TagString: Final
@@ -7357,6 +7615,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHeals: 100
+--- !u!114 &388177669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 388177662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 397
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1001 &388851723
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7878,6 +8158,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 353
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &415596306 stripped
@@ -8113,6 +8398,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 352
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -8367,6 +8657,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 351
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &442465679 stripped
@@ -8456,6 +8751,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 350
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -8617,6 +8917,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 349
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -8858,6 +9163,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 348
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &457412966 stripped
@@ -9048,6 +9358,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 347
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &465734077 stripped
@@ -9229,6 +9544,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (48)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 346
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &471997488 stripped
@@ -9318,6 +9638,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 345
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -9480,6 +9805,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 344
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &483287694 stripped
@@ -9569,6 +9899,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (49)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 343
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -9730,6 +10065,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 342
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -10411,6 +10751,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 341
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &531226027 stripped
@@ -10500,6 +10845,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 340
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -10731,6 +11081,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 339
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -11356,6 +11711,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 338
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &582864742 stripped
@@ -11445,6 +11805,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 337
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -11606,6 +11971,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 336
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -11911,6 +12281,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 335
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &625690862 stripped
@@ -12001,6 +12376,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 334
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &630486693 stripped
@@ -12090,6 +12470,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 333
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -12251,6 +12636,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (35)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 332
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -12510,6 +12900,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 331
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &652200904 stripped
@@ -12599,6 +12994,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 330
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -13231,6 +13631,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 329
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &680030724 stripped
@@ -13462,6 +13867,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 328
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -13853,6 +14263,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 327
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &715383454 stripped
@@ -14013,6 +14428,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 326
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -14425,6 +14845,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 325
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &757944058 stripped
@@ -14775,6 +15200,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 324
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &779354604 stripped
@@ -14936,6 +15366,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 323
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &788104149 stripped
@@ -15025,6 +15460,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 322
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -15116,6 +15556,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 321
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &796449938 stripped
@@ -15205,6 +15650,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 320
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -15296,6 +15746,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 319
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &803628315 stripped
@@ -15385,6 +15840,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 318
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -15685,6 +16145,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 317
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &837532973 stripped
@@ -15774,6 +16239,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 316
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -15865,6 +16335,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 315
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &845046128 stripped
@@ -15954,6 +16429,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 314
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -16121,6 +16601,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 313
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -16439,6 +16924,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 312
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -16767,6 +17257,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 311
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &867571586 stripped
@@ -16927,6 +17422,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 310
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -17159,6 +17659,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 309
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -17395,6 +17900,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 308
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -17749,6 +18259,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 307
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &933789830 stripped
@@ -17838,6 +18353,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 306
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -17929,6 +18449,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 305
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &936064011 stripped
@@ -18018,6 +18543,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (39)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 304
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -18256,6 +18786,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 303
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -18830,6 +19365,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (43)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 302
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &972659462 stripped
@@ -19103,6 +19643,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 301
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &991377965 stripped
@@ -19263,6 +19808,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (55)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 300
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -19499,6 +20049,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1023806326}
   - component: {fileID: 1023806327}
+  - component: {fileID: 1023806328}
   m_Layer: 0
   m_Name: Start
   m_TagString: Start
@@ -19537,11 +20088,33 @@ MonoBehaviour:
   enemy3: {fileID: 8735896012288617056, guid: ff38dfc21719f514496957e14085dca8, type: 3}
   enemy4: {fileID: 3313652846954529429, guid: 7ef09b9ea745435449764fa749da83e5, type: 3}
   enemy5: {fileID: 5469203335691211642, guid: 96eeb3f770c4c89488fcb175fbcc2d27, type: 3}
-  enemy1U: {fileID: 0}
-  enemy2U: {fileID: 0}
-  enemy3U: {fileID: 0}
-  enemy4U: {fileID: 0}
-  enemy5U: {fileID: 0}
+  enemy1U: {fileID: 8371372193551991179, guid: 9f3e683880cedde44a2577a51cd10c79, type: 3}
+  enemy2U: {fileID: 8966757087193971610, guid: 8c15c570d33529147a5dd9dc602f0975, type: 3}
+  enemy3U: {fileID: 8735896012288617056, guid: bb520a30398dcb64bb0df1d14cb3590f, type: 3}
+  enemy4U: {fileID: 3313652846954529429, guid: 055ef2991e9ac944f9f213a040788e58, type: 3}
+  enemy5U: {fileID: 5469203335691211642, guid: 31c83f3ed5f2fcc408067aea4cdec8e7, type: 3}
+--- !u!114 &1023806328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1023806325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 391
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &1024279007
 GameObject:
   m_ObjectHideFlags: 0
@@ -19552,6 +20125,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1024279008}
   - component: {fileID: 1024279009}
+  - component: {fileID: 1024279010}
   m_Layer: 0
   m_Name: NextWaveControl
   m_TagString: Untagged
@@ -19585,6 +20159,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c625ab86d023bae4d8360eb30b6b9a83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1024279010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1024279007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 387
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &1027421190
 GameObject:
   m_ObjectHideFlags: 0
@@ -19709,6 +20305,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 299
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -19870,6 +20471,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 298
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -20074,6 +20680,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 297
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &1059806142 stripped
@@ -20163,6 +20774,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (54)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 296
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -20324,6 +20940,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &1067255531 stripped
@@ -20413,6 +21034,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 294
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -20604,6 +21230,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 293
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &1081397544 stripped
@@ -20693,6 +21324,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (47)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 292
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -20946,6 +21582,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 291
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &1107570263 stripped
@@ -21035,6 +21676,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 290
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -21126,6 +21772,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 289
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &1116109911 stripped
@@ -21215,6 +21866,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 288
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -21306,6 +21962,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 287
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &1134712980 stripped
@@ -21395,6 +22056,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 286
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -21557,6 +22223,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (50)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 285
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &1148881355 stripped
@@ -21717,6 +22388,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 284
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -22006,6 +22682,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 283
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &1182094902 stripped
@@ -22139,6 +22820,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 282
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &1195914208 stripped
@@ -22229,6 +22915,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 281
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &1201975796 stripped
@@ -22318,6 +23009,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 280
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -22641,6 +23337,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 279
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -23015,6 +23716,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 278
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &1223329166 stripped
@@ -23104,6 +23810,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 277
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -23341,6 +24052,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 276
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &1250460872 stripped
@@ -23430,6 +24146,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (40)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 275
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -23612,6 +24333,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 274
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &1264504646 stripped
@@ -23701,6 +24427,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 273
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -23858,10 +24589,20 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.031111108
       objectReference: {fileID: 0}
+    - target: {fileID: 4667319784093007658, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: isActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4667319784093104520, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
         type: 3}
       propertyPath: m_Name
       value: Buy (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 272
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -24095,6 +24836,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 271
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &1281953088 stripped
@@ -24185,6 +24931,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 270
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &1283381971 stripped
@@ -24274,6 +25025,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 269
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -24436,6 +25192,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 268
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &1292493175 stripped
@@ -24525,6 +25286,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 267
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -24690,6 +25456,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 266
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -25240,6 +26011,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 265
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &1323087567 stripped
@@ -25673,6 +26449,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (42)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 264
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &1359207218 stripped
@@ -25833,6 +26614,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 263
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -25995,6 +26781,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 262
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &1363506499 stripped
@@ -26084,6 +26875,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 261
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -26175,6 +26971,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 260
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &1383769485 stripped
@@ -26183,79 +26984,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1383769484}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1390601365
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1390601366}
-  - component: {fileID: 1390601368}
-  - component: {fileID: 1390601367}
-  m_Layer: 5
-  m_Name: Panel
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1390601366
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1390601365}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1400411219}
-  m_Father: {fileID: 268350183}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 850, y: 0}
-  m_SizeDelta: {x: 600, y: 800}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1390601367
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1390601365}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
---- !u!222 &1390601368
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1390601365}
-  m_CullTransparentMesh: 0
 --- !u!1001 &1391109464
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26473,83 +27201,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1395143456}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1400411218
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1400411219}
-  - component: {fileID: 1400411221}
-  - component: {fileID: 1400411220}
-  m_Layer: 5
-  m_Name: log
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1400411219
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1400411218}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1390601366}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00012207, y: -0.000030518}
-  m_SizeDelta: {x: 600, y: 800}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1400411220
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1400411218}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 35
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 0
-    m_MaxSize: 60
-    m_Alignment: 0
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: 
---- !u!222 &1400411221
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1400411218}
-  m_CullTransparentMesh: 0
 --- !u!1001 &1414202545
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26631,6 +27282,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 259
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -27101,6 +27757,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (52)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 258
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &1473403903 stripped
@@ -27291,6 +27952,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 257
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &1483359448 stripped
@@ -27380,6 +28046,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 256
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -27546,6 +28217,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (51)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 255
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &1498882076 stripped
@@ -27635,6 +28311,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 254
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -27888,6 +28569,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 253
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &1524640186 stripped
@@ -28119,6 +28805,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 252
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -28676,6 +29367,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1594334320}
   - component: {fileID: 1594334321}
+  - component: {fileID: 1594334322}
   m_Layer: 0
   m_Name: Start
   m_TagString: Start
@@ -28714,11 +29406,33 @@ MonoBehaviour:
   enemy3: {fileID: 8735896012288617056, guid: ff38dfc21719f514496957e14085dca8, type: 3}
   enemy4: {fileID: 3313652846954529429, guid: 7ef09b9ea745435449764fa749da83e5, type: 3}
   enemy5: {fileID: 5469203335691211642, guid: 96eeb3f770c4c89488fcb175fbcc2d27, type: 3}
-  enemy1U: {fileID: 0}
-  enemy2U: {fileID: 0}
-  enemy3U: {fileID: 0}
-  enemy4U: {fileID: 0}
-  enemy5U: {fileID: 0}
+  enemy1U: {fileID: 8371372193551991179, guid: 9f3e683880cedde44a2577a51cd10c79, type: 3}
+  enemy2U: {fileID: 8966757087193971610, guid: 8c15c570d33529147a5dd9dc602f0975, type: 3}
+  enemy3U: {fileID: 8735896012288617056, guid: bb520a30398dcb64bb0df1d14cb3590f, type: 3}
+  enemy4U: {fileID: 3313652846954529429, guid: 055ef2991e9ac944f9f213a040788e58, type: 3}
+  enemy5U: {fileID: 5469203335691211642, guid: 31c83f3ed5f2fcc408067aea4cdec8e7, type: 3}
+--- !u!114 &1594334322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1594334319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 390
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1001 &1594620333
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28800,6 +29514,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 251
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -28890,6 +29609,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 250
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -29121,6 +29845,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 249
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -29359,6 +30088,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 248
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -29763,6 +30497,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 247
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &1671884701 stripped
@@ -29923,6 +30662,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 246
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -30089,6 +30833,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 245
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &1684279984 stripped
@@ -30250,6 +30999,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 244
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &1685306340 stripped
@@ -30339,6 +31093,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 243
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -30521,6 +31280,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (41)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 242
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &1704414639 stripped
@@ -30610,6 +31374,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 241
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -30772,6 +31541,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 240
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &1714591389 stripped
@@ -30862,6 +31636,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (40)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 239
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &1717541015 stripped
@@ -30951,6 +31730,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 238
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -31401,6 +32185,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 237
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &1747061421 stripped
@@ -31618,6 +32407,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 236
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &1748361098 stripped
@@ -31707,6 +32501,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 235
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -31944,6 +32743,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 234
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &1758334668 stripped
@@ -32033,6 +32837,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 233
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -32357,6 +33166,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 232
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &1771621859 stripped
@@ -32521,6 +33335,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 231
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -32786,6 +33605,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 230
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -33241,6 +34065,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 229
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &1813996723 stripped
@@ -33331,6 +34160,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 228
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &1815223883 stripped
@@ -33420,6 +34254,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 227
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -33744,6 +34583,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 226
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &1830260747 stripped
@@ -34055,6 +34899,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 225
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &1850143928 stripped
@@ -34144,6 +34993,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 224
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -34344,6 +35198,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 223
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &1871204089 stripped
@@ -34434,6 +35293,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 222
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &1873762980 stripped
@@ -34523,6 +35387,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 221
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -34685,6 +35554,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 220
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &1880613367 stripped
@@ -34774,6 +35648,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 219
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -34865,6 +35744,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 218
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &1885957101 stripped
@@ -34954,6 +35838,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 217
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -35114,6 +36003,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 216
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -35589,6 +36483,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 215
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &1916807215 stripped
@@ -35679,6 +36578,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 214
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &1917742688 stripped
@@ -35768,6 +36672,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 213
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -36001,6 +36910,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 212
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &1932017033 stripped
@@ -36182,6 +37096,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 211
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &1940003617 stripped
@@ -36343,6 +37262,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 210
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &1949495297 stripped
@@ -36432,6 +37356,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 209
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -36623,6 +37552,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (53)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 208
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &1976463485 stripped
@@ -36712,6 +37646,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (44)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 207
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -37074,6 +38013,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (46)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 206
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &1992051431 stripped
@@ -37163,6 +38107,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 205
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -37400,6 +38349,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 204
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &1999572736 stripped
@@ -37489,6 +38443,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 203
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -37927,6 +38886,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 202
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &2024208739 stripped
@@ -38259,6 +39223,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 201
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &2041774276 stripped
@@ -38423,6 +39392,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 200
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -38727,6 +39701,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 199
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &2055721608 stripped
@@ -38892,6 +39871,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 198
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &2072365015 stripped
@@ -39052,6 +40036,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 197
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -39356,6 +40345,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buy (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 196
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
 --- !u!4 &2114638754 stripped
@@ -39616,6 +40610,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 195
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -39996,6 +40995,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Buy (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7164540890187746761, guid: c49cbf5ea8461f54fbe2dc808e0ffa61,
+        type: 3}
+      propertyPath: sceneViewId
+      value: 194
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cbf5ea8461f54fbe2dc808e0ffa61, type: 3}
@@ -42172,11 +43176,11 @@ MonoBehaviour:
   enemy3: {fileID: 8735896012288617056, guid: ff38dfc21719f514496957e14085dca8, type: 3}
   enemy4: {fileID: 3313652846954529429, guid: 7ef09b9ea745435449764fa749da83e5, type: 3}
   enemy5: {fileID: 5469203335691211642, guid: 96eeb3f770c4c89488fcb175fbcc2d27, type: 3}
-  enemy1U: {fileID: 0}
-  enemy2U: {fileID: 0}
-  enemy3U: {fileID: 0}
-  enemy4U: {fileID: 0}
-  enemy5U: {fileID: 0}
+  enemy1U: {fileID: 8371372193551991179, guid: 9f3e683880cedde44a2577a51cd10c79, type: 3}
+  enemy2U: {fileID: 8966757087193971610, guid: 8c15c570d33529147a5dd9dc602f0975, type: 3}
+  enemy3U: {fileID: 8735896012288617056, guid: bb520a30398dcb64bb0df1d14cb3590f, type: 3}
+  enemy4U: {fileID: 3313652846954529429, guid: 055ef2991e9ac944f9f213a040788e58, type: 3}
+  enemy5U: {fileID: 5469203335691211642, guid: 31c83f3ed5f2fcc408067aea4cdec8e7, type: 3}
 --- !u!4 &4744511413477932975
 Transform:
   m_ObjectHideFlags: 0
@@ -42201,6 +43205,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4744511413477932975}
   - component: {fileID: 4744511413477932974}
+  - component: {fileID: 4744511413477932977}
   m_Layer: 0
   m_Name: Start
   m_TagString: Start
@@ -42208,6 +43213,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &4744511413477932977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4744511413477932976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 389
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1001 &4744511413531027842
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44787,6 +45814,7 @@ GameObject:
   - component: {fileID: 4744511414415654111}
   - component: {fileID: 4744511414415654176}
   - component: {fileID: 4744511414415654107}
+  - component: {fileID: 4744511414415654178}
   m_Layer: 0
   m_Name: Final
   m_TagString: Final
@@ -44794,6 +45822,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &4744511414415654178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4744511414415654177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 394
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1001 &4744511414415756244
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45984,11 +47034,11 @@ MonoBehaviour:
   enemy3: {fileID: 8735896012288617056, guid: ff38dfc21719f514496957e14085dca8, type: 3}
   enemy4: {fileID: 3313652846954529429, guid: 7ef09b9ea745435449764fa749da83e5, type: 3}
   enemy5: {fileID: 5469203335691211642, guid: 96eeb3f770c4c89488fcb175fbcc2d27, type: 3}
-  enemy1U: {fileID: 0}
-  enemy2U: {fileID: 0}
-  enemy3U: {fileID: 0}
-  enemy4U: {fileID: 0}
-  enemy5U: {fileID: 0}
+  enemy1U: {fileID: 8371372193551991179, guid: 9f3e683880cedde44a2577a51cd10c79, type: 3}
+  enemy2U: {fileID: 8966757087193971610, guid: 8c15c570d33529147a5dd9dc602f0975, type: 3}
+  enemy3U: {fileID: 8735896012288617056, guid: bb520a30398dcb64bb0df1d14cb3590f, type: 3}
+  enemy4U: {fileID: 3313652846954529429, guid: 055ef2991e9ac944f9f213a040788e58, type: 3}
+  enemy5U: {fileID: 5469203335691211642, guid: 31c83f3ed5f2fcc408067aea4cdec8e7, type: 3}
 --- !u!4 &6328959173477425739
 Transform:
   m_ObjectHideFlags: 0
@@ -46013,6 +47063,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6328959173477425739}
   - component: {fileID: 6328959173477425738}
+  - component: {fileID: 6328959173477425749}
   m_Layer: 0
   m_Name: Start
   m_TagString: Start
@@ -46020,6 +47071,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &6328959173477425749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6328959173477425748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 388
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1001 &6328959173565582627
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -48518,6 +49591,7 @@ GameObject:
   - component: {fileID: 6328959174687777083}
   - component: {fileID: 6328959174687776964}
   - component: {fileID: 6328959174687777087}
+  - component: {fileID: 6328959174687776966}
   m_Layer: 0
   m_Name: Final
   m_TagString: Final
@@ -48525,6 +49599,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &6328959174687776966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6328959174687776965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 393
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!4 &6328959174687777080
 Transform:
   m_ObjectHideFlags: 0

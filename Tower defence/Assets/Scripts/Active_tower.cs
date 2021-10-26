@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Photon.Pun;
 
 public class Active_tower : MonoBehaviour
 { 
@@ -11,6 +12,8 @@ public class Active_tower : MonoBehaviour
     public static string ClassLevel_Tower;
     private int UpCoats = 0;
     button_cancel cancel = new button_cancel();
+    [SerializeField]
+    private bool isActive;
     void OnMouseDown()
     {
         if (gameObject.tag == "Active_tower") { cancel.Cancel(); }
@@ -19,8 +22,12 @@ public class Active_tower : MonoBehaviour
             cancel.Cancel();
 
             gameObject.tag = "Active_tower";
+            isActive = true;
+            gameObject.GetComponent<PhotonView>().TransferOwnership(PhotonNetwork.LocalPlayer);
 
             Instantiate(Resources.Load<Transform>("Prefabs/Sphere"), transform.position, Quaternion.identity); // Подсветка башни
+
+
             Level_Tower = gameObject.name;
             Class_Tower = gameObject.name;
             Level_Tower = Level_Tower.Remove(Level_Tower.Length - 7, 7); //Отделение цифры уровня башни

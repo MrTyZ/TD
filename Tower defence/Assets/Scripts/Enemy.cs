@@ -5,7 +5,7 @@ using UnityEngine.AI;
 using UnityEngine.EventSystems;
 using Photon.Pun;
 
-public class Enemy : MonoBehaviour
+public class Enemy : MonoBehaviourPun
 {
     [SerializeField]
     private int HpMob;
@@ -26,6 +26,7 @@ public class Enemy : MonoBehaviour
 
     void Start()
     {
+        PhotonView photonView = PhotonView.Get(this);
         agent = gameObject.GetComponent<NavMeshAgent>(); //Присвоение самого себя к agent
         agent.speed *= globalvariable.MobModSpeed; //Увелечение скорости моба
         HpMob += NewEnemy.Wave; //Увелечение здоровья моба
@@ -34,7 +35,7 @@ public class Enemy : MonoBehaviour
         switch (agent.name)
         {
             case "Enemy1(Clone)":
-                {   
+                {
                     HpMob = 5;
                     GoldForEnemy = 5;
                 }
@@ -48,14 +49,14 @@ public class Enemy : MonoBehaviour
             case "Enemy3(Clone)":
                 {
                     HpMob = 25;
-                    HpMob += 2*NewEnemy.Wave;
+                    HpMob += 2 * NewEnemy.Wave;
                     GoldForEnemy = 7;
                 }
                 break;
             case "Enemy4(Clone)":
                 {
                     HpMob = 15;
-                    GoldForEnemy =9;
+                    GoldForEnemy = 9;
                     HpMob += NewEnemy.Wave;
                 }
                 break;
@@ -77,9 +78,11 @@ public class Enemy : MonoBehaviour
 
     void Update()
     {
-        if ((globalvariable.Earthquake == true)&&(EarthquakeDamage == false)) { HpMob -= 1; EarthquakeDamage = true; StartCoroutine(Earthquake()); }
+        if ((globalvariable.Earthquake == true) && (EarthquakeDamage == false)) { HpMob -= 1; EarthquakeDamage = true; StartCoroutine(Earthquake()); }
         //Удаление моба и начисление золота при смерти
-        if (HpMob <= 0) { 
+        if (HpMob <= 0) {
+            if (globalvariable.online) { GoldForEnemy /= 2; photonView.RPC("GetMoney", RpcTarget.All, GoldForEnemy); }
+            else { Gold.gold += GoldForEnemy; }
             if (globalvariable.online)
             {
                 PhotonNetwork.Destroy(gameObject);
@@ -88,8 +91,8 @@ public class Enemy : MonoBehaviour
             {
                 Destroy(gameObject, .0f);
             }
-            
-            Gold.gold += GoldForEnemy;
+           
+
         }
         if (HpMob != LastHPMob)
         {
@@ -102,15 +105,20 @@ public class Enemy : MonoBehaviour
     }
     public void OnTriggerStay(Collider cal)
     {
-        if ((globalvariable.FireDamage == true)&&(cal.CompareTag("DamageZoneOfFire")))
+        if ((globalvariable.FireDamage == true) && (cal.CompareTag("DamageZoneOfFire")))
         {
             Damage *= Random.Range(2, 5);
             HpMob -= Damage;
             Damage = 1;
             globalvariable.FireDamage = false;
         }
-        
 
+
+    }
+    [PunRPC]
+    private void GetMoney(int GoldForEnemy)
+    {
+        Gold.gold += GoldForEnemy;
     }
     public void OnTriggerEnter(Collider cal)
     {

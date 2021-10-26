@@ -81,6 +81,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54a8afc4c257acb46a4b16b3fe772739, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  part1: {fileID: 4667319784093104524}
+  part2: {fileID: 4667319784093104522}
+  buy: {fileID: 2100000, guid: 04843b310c9cc504f93a418fb77c53dc, type: 2}
+  buy_active_host: {fileID: 2100000, guid: 45c75a4812b1d784f879e3c4613dedf9, type: 2}
+  buy_active_client: {fileID: 2100000, guid: 3a1394332f9fc8f4ea4feb0b957ed02b, type: 2}
+  isActive: 0
 --- !u!114 &571966947315039458
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -97,9 +103,10 @@ MonoBehaviour:
   Group: 0
   prefixField: -1
   Synchronization: 3
-  OwnershipTransfer: 0
+  OwnershipTransfer: 1
   observableSearch: 2
   ObservedComponents:
+  - {fileID: 4667319784093007658}
   - {fileID: 4961788546140645889}
   sceneViewId: 0
   InstantiationId: 0
@@ -208,6 +215,7 @@ GameObject:
   - component: {fileID: 4667319784092870060}
   - component: {fileID: 4667319784096294282}
   - component: {fileID: 4667319784095295306}
+  - component: {fileID: 7164540890187746761}
   m_Layer: 0
   m_Name: "\u041A\u043E\u043D\u0443\u0441_003"
   m_TagString: Untagged
@@ -274,3 +282,25 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &7164540890187746761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4667319784093104524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0

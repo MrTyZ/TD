@@ -14,6 +14,8 @@ TagManager:
   - Start
   - DamageZoneOfFire
   - map
+  - Active_buy
+  - Buy_swap
   layers:
   - Default
   - TransparentFX

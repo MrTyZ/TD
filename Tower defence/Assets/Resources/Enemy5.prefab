@@ -140,6 +140,7 @@ GameObject:
   - component: {fileID: 114066492108603044}
   - component: {fileID: 114486856684861476}
   - component: {fileID: 114642356691881266}
+  - component: {fileID: 114329806658570958}
   m_Layer: 10
   m_Name: Enemy5
   m_TagString: Enemy
@@ -316,6 +317,22 @@ MonoBehaviour:
   m_SynchronizeRotation: 1
   m_SynchronizeScale: 1
   m_UseLocal: 1
+--- !u!114 &114329806658570958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5469203335691211642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64179f3720bbfe947b7724caa67b7c1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizeVelocity: 1
+  m_SynchronizeAngularVelocity: 0
+  m_TeleportEnabled: 0
+  m_TeleportIfDistanceGreaterThan: 3
 --- !u!1 &8154991669584152532
 GameObject:
   m_ObjectHideFlags: 0

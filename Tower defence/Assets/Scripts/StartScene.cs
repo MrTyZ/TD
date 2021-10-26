@@ -9,6 +9,8 @@ public class StartScene : MonoBehaviour
 {
     public static GameObject[] MapArray = new GameObject[MenuButtons.countmap];
     public static GameObject GameMenu;
+    public static int SelectMap;
+  
     void Start()
     {
         if ((SceneManager.GetActiveScene().name == "Main1") || (SceneManager.GetActiveScene().name == "MainMultiplayer"))
@@ -21,18 +23,11 @@ public class StartScene : MonoBehaviour
                 MapArray[i] = GameObject.Find(MenuButtons.MapArrayString[i]);
                 MapArray[i].SetActive(false);
             }
-            MapArray[MenuButtons.SelectArray].SetActive(true);
+            
+            MapArray[SelectMap].SetActive(true);
         }
         GameMenu = GameObject.Find("GameMenu");
         GameMenu.SetActive(false);
         Time.timeScale = 1;
-        if (SceneManager.GetActiveScene().name == "MainMultiplayer")
-        {
-            GameObject.Find("log").GetComponent<Text>().text += "Online " + globalvariable.online + "\n";
-        }
-
-        
-
-
     }
 }

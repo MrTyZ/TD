@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Photon.Pun;
 
-public class GameOver : MonoBehaviour
+public class GameOver : MonoBehaviourPun
 {
     public GameObject Map;
     
@@ -47,9 +48,16 @@ public class GameOver : MonoBehaviour
     {
         if (xuylo.tag == "Enemy")//Отнимание здоровья при пропуске врага
         {
-            HealthBarFinal.realHeals -= 1;
+            if (globalvariable.online) { photonView.RPC("DecreaseHealth", RpcTarget.All, null); }
+            else { HealthBarFinal.realHeals -= 1; }
+            
             Destroy(xuylo.gameObject, .0f);
         }
+    }
+    [PunRPC]
+    private void DecreaseHealth()
+    {
+        HealthBarFinal.realHeals -= 1;
     }
     IEnumerator GenMess()
     {

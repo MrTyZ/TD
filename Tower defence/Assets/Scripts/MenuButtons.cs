@@ -23,6 +23,12 @@ public class MenuButtons : MonoBehaviour
     void Start()
     {
             Time.timeScale = 1;
+            InfintySelector.SetActive(true);
+            Main.SetActive(true);
+            setting.SetActive(true);
+            Trials.SetActive(true);
+            Multiplayer.SetActive(true);
+            Stats.SetActive(true);
             //Загрузка натсроек из реестра
             Background.GetComponent<RawImage>().enabled = true;
             if (PlayerPrefs.GetInt("language") == 0) { localisationSystem.language = localisationSystem.Language.English;
