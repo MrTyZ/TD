@@ -38,7 +38,7 @@ public class NewEnemy : MonoBehaviourPun
     {
         if (globalvariable.online)
         {
-            for (int i = 0; i < mob1; i++)
+            for (int i = 0; i < count; i++)
             {
                 PhotonNetwork.Instantiate(enemy.name, transform.position, Quaternion.identity);
 
@@ -72,7 +72,7 @@ public class NewEnemy : MonoBehaviourPun
                 if (globalvariable.online) { photonView.RPC("GetMoney", RpcTarget.All, null); }
                 else { Gold.gold += 30; }
                 
-                if (Wave % 5 == 0) { globalvariable.MobModSpeed += 0.3F; mobr = Random.Range(1, 5); }
+                if (Wave % 5 == 0) { globalvariable.MobModSpeed += 0.3F; mobr += Random.Range(1, 5); }
 
                 if (Wave < 10)//Волны до 10 волны
                 {
