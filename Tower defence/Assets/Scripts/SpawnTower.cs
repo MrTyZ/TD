@@ -28,7 +28,6 @@ public class SpawnTower : MonoBehaviour
                 if (globalvariable.online)
                 {
                     PhotonNetwork.Instantiate(NameTower, GameObject.FindGameObjectWithTag("Active_buy").transform.position, Quaternion.identity);
-                    Gold.gold -= 100;
                     PhotonNetwork.Destroy(GameObject.FindGameObjectWithTag("Active_buy"));
                 }
                 else
@@ -36,7 +35,8 @@ public class SpawnTower : MonoBehaviour
                     Instantiate(Resources.Load<Transform>(NameTower), GameObject.FindGameObjectWithTag("Active_buy").transform.position, Quaternion.identity);
                     Destroy(GameObject.FindGameObjectWithTag("Active_buy"), .0f);
                 }
-             
+                Gold.gold -= 100;
+
             }
             else
             {

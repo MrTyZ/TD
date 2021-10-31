@@ -25,7 +25,7 @@ public class LVL7 : MonoBehaviour
                 break;
             case 1:
                 {
-                    if ((NewEnemy.Wave == 11) || ((NewEnemy.Wave == 10) && (GameObject.FindGameObjectsWithTag("Enemy") == null)))
+                    if ((NewEnemy.Wave == 11) || ((NewEnemy.Wave == 10) && (GameObject.FindGameObjectWithTag("Enemy") == null)))
                     {
                         
                         Task[TaskEnd].SetActive(false);

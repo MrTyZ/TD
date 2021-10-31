@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Photon.Pun;
 
-public class MenuButtons : MonoBehaviour
+public class MenuButtons : MonoBehaviourPun
 {
     public GameObject InfintySelector;
     public GameObject Main;
@@ -22,7 +23,8 @@ public class MenuButtons : MonoBehaviour
     
     void Start()
     {
-            Time.timeScale = 1;
+        PhotonView photonView = PhotonView.Get(this);
+        Time.timeScale = 1;
             InfintySelector.SetActive(true);
             Main.SetActive(true);
             setting.SetActive(true);
@@ -74,19 +76,42 @@ public class MenuButtons : MonoBehaviour
          }
     public void LeftSelectInfinity()
     {
-        SelectArray--;
-        if (SelectArray < 0) { SelectArray = countmap - 1; }
+        if (globalvariable.online)
+        { photonView.RPC("Decrease", RpcTarget.All, null); }
+        else {
+            SelectArray--;
+            if (SelectArray < 0) { SelectArray = countmap - 1; }
+        }
+        
        
         swapmapinfinity();
         
     }
+    [PunRPC]
+    private void Decrease()
+    {
+        SelectArray--;
+        if (SelectArray < 0) { SelectArray = countmap - 1; }
+    }
     public void RightSelectInfinity()
     {
-        SelectArray++;
-        if (SelectArray > countmap-1) { SelectArray = 0; }
+        if (globalvariable.online) { photonView.RPC("Increase", RpcTarget.All, null); }
+        else
+        {
+            SelectArray++;
+            if (SelectArray > countmap - 1) { SelectArray = 0; }
+        }
+        
         swapmapinfinity();
        
     }
+    [PunRPC]
+    private void Increase()
+    {
+        SelectArray++;
+        if (SelectArray > countmap - 1) { SelectArray = 0; }
+    }
+   
     public void Infinity()
     {
         Main.SetActive(false);
@@ -227,5 +252,4 @@ public class MenuButtons : MonoBehaviour
         PlayerPrefs.SetInt("language", localisationSystem.LanguageIndex);
         
     }
-
 }

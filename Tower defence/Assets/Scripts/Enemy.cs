@@ -29,7 +29,7 @@ public class Enemy : MonoBehaviourPun
         PhotonView photonView = PhotonView.Get(this);
         agent = gameObject.GetComponent<NavMeshAgent>(); //Присвоение самого себя к agent
         agent.speed *= globalvariable.MobModSpeed; //Увелечение скорости моба
-        HpMob += NewEnemy.Wave; //Увелечение здоровья моба
+        
         targetMarker = GameObject.FindWithTag("Final").transform; //Назначение выхода
         agent.destination = targetMarker.position;
         switch (agent.name)
@@ -71,6 +71,7 @@ public class Enemy : MonoBehaviourPun
                 { GoldForEnemy = 30; }
                 break;
         }
+        HpMob += NewEnemy.Wave; //Увелечение здоровья моба
         MaxHP = HpMob;
         LastHPMob = HpMob;
 
@@ -126,11 +127,66 @@ public class Enemy : MonoBehaviourPun
         {
             if (cal.name != "Bullet_UEarthquake")
             {
-                Damage *= Random.Range(2, 5);
-                HpMob -= Damage;
-                Damage = 1;
+                switch (gameObject.name)
+                {
+                    case "Enemy1U(Clone)":
+                        {
+                            if ((cal.name == "Bullet_Fire")||(cal.name == "Bullet_UFire")||(cal.name == "Bullet_UFireBall"))
+                            {}
+                            else
+                            {
+                                Damage *= Random.Range(2, 5);
+                                HpMob -= Damage;
+                                Damage = 1;
+                            }
+                        }
+                    break;
+                    case "Enemy2U(Clone)":
+                        {
+                            if ((cal.name == "Bullet_Air") || (cal.name == "Bullet_UTornado") || (cal.name == "Bullet_ULightning"))
+                            { }
+                            else
+                            {
+                                Damage *= Random.Range(2, 5);
+                                HpMob -= Damage;
+                                Damage = 1;
+                            }
+                        }
+                        break;
+                    case "Enemy3U(Clone)":
+                        {
+                            if ((cal.name == "Bullet_Water") || (cal.name == "Bullet_UWater") || (cal.name == "Bullet_UIce"))
+                            { }
+                            else
+                            {
+                                Damage *= Random.Range(2, 5);
+                                HpMob -= Damage;
+                                Damage = 1;
+                            }
+                        }
+                        break;
+                    case "Enemy4U(Clone)":
+                        {
+                            if ((cal.name == "Bullet_Ground") || (cal.name == "Bullet_UStone") || (cal.name == "Bullet_UEarthquake"))
+                            { }
+                            else
+                            {
+                                Damage *= Random.Range(2, 5);
+                                HpMob -= Damage;
+                                Damage = 1;
+                            }
+                        }
+                        break;
+                    default:
+                        {
+                            Damage *= Random.Range(2, 5);
+                            HpMob -= Damage;
+                            Damage = 1;
+                        }
+                     break;
+                }
+                
             }
-            
             switch (cal.name)
              {
                  case "Bullet_UIce":
@@ -187,11 +243,6 @@ public class Enemy : MonoBehaviourPun
                     break;
 
             }
-            
-            
-
-
-
         }
     }
     IEnumerator Freez() //Заморозка
@@ -227,5 +278,5 @@ public class Enemy : MonoBehaviourPun
     private void OnMouseDown()
     {
          if (MenuButtons.DebugMod) { print("Destroy2"); Destroy(gameObject, .0f); }
-              }
+    }
 }

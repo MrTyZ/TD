@@ -7,7 +7,7 @@ using Photon.Pun;
 public class GameOver : MonoBehaviourPun
 {
     public GameObject Map;
-    
+    private int count;
     void Update()
     {
         if (HealthBarFinal.realHeals <= 0)  //Действия после проигрыша
@@ -48,16 +48,69 @@ public class GameOver : MonoBehaviourPun
     {
         if (xuylo.tag == "Enemy")//Отнимание здоровья при пропуске врага
         {
-            if (globalvariable.online) { photonView.RPC("DecreaseHealth", RpcTarget.All, null); }
-            else { HealthBarFinal.realHeals -= 1; }
+            switch(xuylo.name)
+            {
+                case "Enemy1U(Clone)":
+                    {
+                        count = 10;
+                    }
+                    break;
+                case "Enemy2U(Clone)":
+                    {
+                        count = 10;
+                    }
+                    break;
+                case "Enemy3U(Clone)":
+                    {
+                        count = 10;
+                    }
+                    break;
+                case "Enemy4U(Clone)":
+                    {
+                        count = 10;
+                    }
+                    break;
+                case "Enemy5U(Clone)":
+                    {
+                        count = 10;
+                    }
+                    break;
+                case "Enemy1(Clone)":
+                    {
+                        count = 1;
+                    }
+                    break;
+                case "Enemy2(Clone)":
+                    {
+                        count = 2;
+                    }
+                    break;
+                case "Enemy3(Clone)":
+                    {
+                        count = 3;
+                    }
+                    break;
+                case "Enemy4(Clone)":
+                    {
+                        count = 4;
+                    }
+                    break;
+                case "Enemy5(Clone)":
+                    {
+                        count = 5;
+                    }
+                    break;
+            }
+            if (globalvariable.online) { photonView.RPC("DecreaseHealth", RpcTarget.All, count); }
+            else { HealthBarFinal.realHeals -= count; }
             
             Destroy(xuylo.gameObject, .0f);
         }
     }
     [PunRPC]
-    private void DecreaseHealth()
+    private void DecreaseHealth(int count)
     {
-        HealthBarFinal.realHeals -= 1;
+        HealthBarFinal.realHeals -= count;
     }
     IEnumerator GenMess()
     {

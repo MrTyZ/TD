@@ -17,7 +17,7 @@ public class LVL6 : MonoBehaviour
             case 0:
                 {
 
-                    if (GameObject.Find("buy_active(Clone)") != null)
+                    if (GameObject.FindGameObjectWithTag("Active_buy") != null)
                     {
                         Task[TaskEnd].SetActive(false);
                         Task[TaskEnd + 1].SetActive(true);
@@ -99,8 +99,8 @@ public class LVL6 : MonoBehaviour
             if (!IsStart)
                 for (int i = 0; i < 4; i++)
                 {
-                Instantiate(Resources.Load<Transform>("Prefabs/Enemy1"), GameObject.FindWithTag("Start").transform.position, Quaternion.identity);
-                Instantiate(Resources.Load<Transform>("Prefabs/Enemy2"), GameObject.FindWithTag("Start").transform.position, Quaternion.identity);
+                Instantiate(Resources.Load<Transform>("Enemy1"), GameObject.FindWithTag("Start").transform.position, Quaternion.identity);
+                Instantiate(Resources.Load<Transform>("Enemy2"), GameObject.FindWithTag("Start").transform.position, Quaternion.identity);
                 IsStart = true;
 
                 }

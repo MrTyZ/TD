@@ -103,6 +103,8 @@ GameObject:
   - component: {fileID: 3806282225708787513}
   - component: {fileID: 4192110357864583619}
   - component: {fileID: 4809372431351778687}
+  - component: {fileID: 2488915006337207644}
+  - component: {fileID: 6389840318189032318}
   m_Layer: 10
   m_Name: GreenHelth
   m_TagString: Untagged
@@ -182,6 +184,45 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.9999999, y: 0.9999999, z: 0.9999999}
   m_Center: {x: -0.00000095367426, y: 0, z: 0.00000047683713}
+--- !u!114 &2488915006337207644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2720991299502325194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 1
+  observableSearch: 2
+  ObservedComponents:
+  - {fileID: 6389840318189032318}
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
+--- !u!114 &6389840318189032318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2720991299502325194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 1
+  m_UseLocal: 1
 --- !u!1 &6130017405905941490
 GameObject:
   m_ObjectHideFlags: 0
@@ -441,6 +482,7 @@ MonoBehaviour:
   observableSearch: 2
   ObservedComponents:
   - {fileID: 114480610930305924}
+  - {fileID: 114957026982190368}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0

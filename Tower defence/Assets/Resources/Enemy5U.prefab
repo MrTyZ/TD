@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 1851020135981342882}
   - component: {fileID: 7247139990694387924}
   - component: {fileID: 3917357769961594938}
+  - component: {fileID: 3361511557524782464}
+  - component: {fileID: 4705172851639947399}
   m_Layer: 10
   m_Name: GreenHelth
   m_TagString: Untagged
@@ -91,6 +93,45 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.9999999, y: 0.9999999, z: 0.9999999}
   m_Center: {x: -0.00000095367426, y: 0, z: 0.00000047683713}
+--- !u!114 &3361511557524782464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3482988457017454852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 1
+  observableSearch: 2
+  ObservedComponents:
+  - {fileID: 4705172851639947399}
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
+--- !u!114 &4705172851639947399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3482988457017454852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 1
+  m_UseLocal: 1
 --- !u!1 &3683343259498601397
 GameObject:
   m_ObjectHideFlags: 0
@@ -272,7 +313,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 724ab02d287e3da418cc37bd6d99c767, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HpMob: 200
+  HpMob: 1000
   agent: {fileID: 0}
   Damage: 1
   GoldForEnemy: 0
@@ -298,6 +339,7 @@ MonoBehaviour:
   observableSearch: 2
   ObservedComponents:
   - {fileID: 114642356691881266}
+  - {fileID: 114720110031299946}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0

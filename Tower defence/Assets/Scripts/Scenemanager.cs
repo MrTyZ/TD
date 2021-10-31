@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using Photon.Pun;
 public class Scenemanager : MonoBehaviour
 {
    public void LoadInfinity()
@@ -23,5 +24,12 @@ public class Scenemanager : MonoBehaviour
         Time.timeScale = 1;
         SceneManager.LoadScene("Trial"+s);
     }
-   
+    public void Leave()
+    {
+        if (PhotonNetwork.InRoom)
+        {
+            PhotonNetwork.LeaveRoom();
+        }
+    }
+
 }

@@ -9,7 +9,6 @@ public class StartScene : MonoBehaviour
 {
     public static GameObject[] MapArray = new GameObject[MenuButtons.countmap];
     public static GameObject GameMenu;
-    public static int SelectMap;
   
     void Start()
     {
@@ -24,7 +23,7 @@ public class StartScene : MonoBehaviour
                 MapArray[i].SetActive(false);
             }
             
-            MapArray[SelectMap].SetActive(true);
+            MapArray[MenuButtons.SelectArray].SetActive(true);
         }
         GameMenu = GameObject.Find("GameMenu");
         GameMenu.SetActive(false);

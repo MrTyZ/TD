@@ -8,7 +8,7 @@ using Photon.Pun;
 public class Tower : MonoBehaviour
 {
     public Transform spawpoint;
-    public Transform bullet;
+    public GameObject bullet;
     public float speed;
     private float speed1;
     private float speedStone = 1;
@@ -24,28 +24,32 @@ public class Tower : MonoBehaviour
     { 
         DamageBullet = 1;
 
-        bullet.position = spawpoint.position;
+        bullet.transform.position = spawpoint.position;
         if (bullet.name == "Bullet_UStone")
         { speedStone = 3; }
-
+        if (globalvariable.online)
+        {
+            if (!PhotonNetwork.IsMasterClient) { bullet.GetComponent<PhotonView>().TransferOwnership(PhotonNetwork.MasterClient); }
+        }
+        
 
     }
-    void Update()
+    void FixedUpdate()
     {
 
-         if (target == null) { UnderAttack = false; bullet.position = spawpoint.position;  }
+         if (target == null) { UnderAttack = false; bullet.transform.position = spawpoint.position;  }
         
         if (UnderAttack)
         {
             if ((globalvariable.online) && (PhotonNetwork.IsMasterClient))
             {
-                speed1 = Time.deltaTime * speed * speedStone;
-                bullet.position = Vector3.MoveTowards(bullet.position, target.position, speed1);
+                speed1 = Time.fixedDeltaTime * speed * speedStone;
+                bullet.transform.position = Vector3.MoveTowards(bullet.transform.position, target.position, speed1);
             }
             else if (!globalvariable.online)
             {
-                speed1 = Time.deltaTime * speed * speedStone;
-                bullet.position = Vector3.MoveTowards(bullet.position, target.position, speed1);
+                speed1 =  Time.fixedDeltaTime * speed * speedStone;
+                bullet.transform.position = Vector3.MoveTowards(bullet.transform.position, target.position, speed1);
             }
            
         }
@@ -78,7 +82,7 @@ public class Tower : MonoBehaviour
     {
         if (col1.transform == target)
         {
-            UnderAttack = false; target = null; bullet.position = spawpoint.position;
+            UnderAttack = false; target = null; bullet.transform.position = spawpoint.position;
         }
     }
 

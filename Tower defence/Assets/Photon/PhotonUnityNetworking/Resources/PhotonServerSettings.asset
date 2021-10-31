@@ -44,6 +44,10 @@ MonoBehaviour:
   - DecreaseHealth
   - DelTower
   - SwapMap
+  - Decrease
+  - Increase
+  - time
+  - Swap
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1

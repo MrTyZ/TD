@@ -11,6 +11,7 @@ public class Active_tower : MonoBehaviour
     public static string Class_Tower;
     public static string ClassLevel_Tower;
     private int UpCoats = 0;
+    public GameObject TargetZone;
     button_cancel cancel = new button_cancel();
     [SerializeField]
     private bool isActive;
@@ -23,7 +24,8 @@ public class Active_tower : MonoBehaviour
 
             gameObject.tag = "Active_tower";
             isActive = true;
-            gameObject.GetComponent<PhotonView>().TransferOwnership(PhotonNetwork.LocalPlayer);
+            if (globalvariable.online) { gameObject.GetComponent<PhotonView>().TransferOwnership(PhotonNetwork.LocalPlayer);}
+            
 
             Instantiate(Resources.Load<Transform>("Prefabs/Sphere"), transform.position, Quaternion.identity); // Подсветка башни
 
@@ -217,6 +219,17 @@ public class Active_tower : MonoBehaviour
         }
 
     }
+    private void Update()
+    {
+        if (gameObject.CompareTag("Active_tower"))
+        {
+            TargetZone.SetActive(true);
+        }
+        else
+        {
+            TargetZone.SetActive(false);
+        }
+    }
 
-   
+
 }

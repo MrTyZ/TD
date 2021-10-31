@@ -49,8 +49,9 @@
 "trial7lvl1","Survive 10 waves","Переживите 10 волн",
 "trial7lvl2","As you can see, every 5 waves, enemies accelerate","Как можно заметить, каждую 5 волну, враги ускоряются",
 "trial8lvl1","Survive 25 waves","Переживите 25 волн",
-"trial8lvl2","As you can see, every 10 waves, new enemies begin to appear","Как можно заметить, каждую 10 волну, начинают появляться новые враги",
+"trial8lvl2","As you can see, every 10 waves, new enemies begin to appear. And every 5th wave is a boss.","Как можно заметить, каждую 10 волну, начинают появляться новые враги. И каждая 5 волна - это босс.",
 "stats","Statistics","Статистика",
 "maxwave","Maximum wave: ","Максимальная волна: ",
 "counttrial","Completed trials: ","Пройдено испытаний: ",
-"multiplayer", "Multiplayer", "Многопользовательская игра"
+"multiplayer", "Multiplayer", "Многопользовательская игра ",
+"nick", "Nick: ", "Ник: "

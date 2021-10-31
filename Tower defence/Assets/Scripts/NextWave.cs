@@ -19,19 +19,32 @@ public class NextWave : MonoBehaviourPun
         if (!start)
         { start=true; }
         else
-        { 
-          NewEnemy.wave = 20;
-          NewEnemy.timerWave = 0;
-          NewEnemy.a = false;
-            if (globalvariable.online) { photonView.RPC("GetMoney", RpcTarget.All, null); }
-            else { Gold.gold += 20; }
-          
+        {
+            if (globalvariable.online) { photonView.RPC("Swap", RpcTarget.All, null); }
+            else {
+                NewEnemy.wave = 20;
+                NewEnemy.timerWave = 0;
+                NewEnemy.a = false;
+                if (globalvariable.online) { photonView.RPC("GetMoney", RpcTarget.All, null); }
+                else { Gold.gold += 20; }
+            }
+            
+
         }
     }
     [PunRPC]
     private void GetMoney()
     {
         Gold.gold += 10;
+    }
+    [PunRPC]
+    private void Swap()
+    {
+        NewEnemy.wave = 20;
+        NewEnemy.timerWave = 0;
+        NewEnemy.a = false;
+        if (globalvariable.online) { photonView.RPC("GetMoney", RpcTarget.All, null); }
+        else { Gold.gold += 20; }
     }
     void Update()
     {

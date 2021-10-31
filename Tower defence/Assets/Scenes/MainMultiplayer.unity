@@ -4018,6 +4018,12 @@ MonoBehaviour:
   enemy3U: {fileID: 8735896012288617056, guid: bb520a30398dcb64bb0df1d14cb3590f, type: 3}
   enemy4U: {fileID: 3313652846954529429, guid: 055ef2991e9ac944f9f213a040788e58, type: 3}
   enemy5U: {fileID: 5469203335691211642, guid: 31c83f3ed5f2fcc408067aea4cdec8e7, type: 3}
+  mob1: 5
+  mob2: 5
+  mob3: 2
+  mob4: 2
+  mob5: 2
+  mobr: 1
 --- !u!114 &229429063
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6615,6 +6621,7 @@ GameObject:
   - component: {fileID: 347842749}
   - component: {fileID: 347842748}
   - component: {fileID: 347842752}
+  - component: {fileID: 347842753}
   m_Layer: 0
   m_Name: Map1
   m_TagString: map
@@ -6729,6 +6736,28 @@ MonoBehaviour:
   m_VoxelSize: 0.083333336
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 23800000, guid: 7a965c99a918f5b49bb3195db500ce6c, type: 2}
+--- !u!114 &347842753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 347842747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 400
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1001 &349152288
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11331,6 +11360,17 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1027421192}
           m_MethodName: LoadMenu
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1027421192}
+          m_MethodName: Leave
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -20093,6 +20133,12 @@ MonoBehaviour:
   enemy3U: {fileID: 8735896012288617056, guid: bb520a30398dcb64bb0df1d14cb3590f, type: 3}
   enemy4U: {fileID: 3313652846954529429, guid: 055ef2991e9ac944f9f213a040788e58, type: 3}
   enemy5U: {fileID: 5469203335691211642, guid: 31c83f3ed5f2fcc408067aea4cdec8e7, type: 3}
+  mob1: 5
+  mob2: 5
+  mob3: 2
+  mob4: 2
+  mob5: 2
+  mobr: 1
 --- !u!114 &1023806328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29411,6 +29457,12 @@ MonoBehaviour:
   enemy3U: {fileID: 8735896012288617056, guid: bb520a30398dcb64bb0df1d14cb3590f, type: 3}
   enemy4U: {fileID: 3313652846954529429, guid: 055ef2991e9ac944f9f213a040788e58, type: 3}
   enemy5U: {fileID: 5469203335691211642, guid: 31c83f3ed5f2fcc408067aea4cdec8e7, type: 3}
+  mob1: 5
+  mob2: 5
+  mob3: 2
+  mob4: 2
+  mob5: 2
+  mobr: 1
 --- !u!114 &1594334322
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43181,6 +43233,12 @@ MonoBehaviour:
   enemy3U: {fileID: 8735896012288617056, guid: bb520a30398dcb64bb0df1d14cb3590f, type: 3}
   enemy4U: {fileID: 3313652846954529429, guid: 055ef2991e9ac944f9f213a040788e58, type: 3}
   enemy5U: {fileID: 5469203335691211642, guid: 31c83f3ed5f2fcc408067aea4cdec8e7, type: 3}
+  mob1: 5
+  mob2: 5
+  mob3: 2
+  mob4: 2
+  mob5: 2
+  mobr: 1
 --- !u!4 &4744511413477932975
 Transform:
   m_ObjectHideFlags: 0
@@ -46252,6 +46310,7 @@ GameObject:
   - component: {fileID: 4744511414442347362}
   - component: {fileID: 4744511414442347363}
   - component: {fileID: 4744511414442347295}
+  - component: {fileID: 4744511414442347365}
   m_Layer: 0
   m_Name: Map2
   m_TagString: map
@@ -46259,6 +46318,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &4744511414442347365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4744511414442347364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 399
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!4 &4744511414445106140
 Transform:
   m_ObjectHideFlags: 0
@@ -47039,6 +47120,12 @@ MonoBehaviour:
   enemy3U: {fileID: 8735896012288617056, guid: bb520a30398dcb64bb0df1d14cb3590f, type: 3}
   enemy4U: {fileID: 3313652846954529429, guid: 055ef2991e9ac944f9f213a040788e58, type: 3}
   enemy5U: {fileID: 5469203335691211642, guid: 31c83f3ed5f2fcc408067aea4cdec8e7, type: 3}
+  mob1: 5
+  mob2: 5
+  mob3: 2
+  mob4: 2
+  mob5: 2
+  mobr: 1
 --- !u!4 &6328959173477425739
 Transform:
   m_ObjectHideFlags: 0
