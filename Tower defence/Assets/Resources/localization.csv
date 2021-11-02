@@ -54,4 +54,5 @@
 "maxwave","Maximum wave: ","Максимальная волна: ",
 "counttrial","Completed trials: ","Пройдено испытаний: ",
 "multiplayer", "Multiplayer", "Многопользовательская игра ",
-"nick", "Nick: ", "Ник: "
+"nick", "Nick: ", "Ник: ",
+"playerlobby", "Player:", "Игроки:",

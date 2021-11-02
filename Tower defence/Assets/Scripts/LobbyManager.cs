@@ -15,6 +15,10 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     public GameObject StartMaster;
     public GameObject Left;
     public GameObject Right;
+    public GameObject NickInput;
+    public GameObject CounterPlayer;
+    public string Nickname;
+    public string Nicknameother;
     public bool connected;
 
     MenuButtons menubtn = new MenuButtons();
@@ -25,10 +29,23 @@ public class LobbyManager : MonoBehaviourPunCallbacks
         {
             PhotonNetwork.LeaveRoom();
         }
-        PhotonNetwork.NickName = "Player" + Random.Range(1, 9999);
+        Nickname = PlayerPrefs.GetString("Nick");
+        if(Nickname == "")
+        {
+            Nickname = "Player" + Random.Range(1, 9999);
+            print(Nickname);
+            PhotonNetwork.NickName = Nickname;
+            NickInput.GetComponent<InputField>().text = Nickname;
+            PlayerPrefs.SetString("Nick", Nickname);
+        }
+        else
+        {
+            PhotonNetwork.NickName = Nickname;
+            NickInput.GetComponent<InputField>().text = Nickname;
+        }
         print(PhotonNetwork.NickName);
-
-        PhotonNetwork.GameVersion = "0.7";
+        
+        PhotonNetwork.GameVersion = "0.9.4";
         PhotonNetwork.AutomaticallySyncScene = true;
         PhotonNetwork.ConnectUsingSettings();
 
@@ -66,7 +83,18 @@ public class LobbyManager : MonoBehaviourPunCallbacks
                 Right.SetActive(false);
             }
         }
+        if (PhotonNetwork.InRoom)
+        {
+            foreach (Player player in PhotonNetwork.PlayerList)
+            {
+                if (Nickname != player.NickName) { Nicknameother = player.NickName; }
+                CounterPlayer.GetComponent<Text>().text = localisationSystem.GetLocalisedValue("playerlobby") + "\n" + Nickname + "\n" + Nicknameother;
+                if (Nickname == player.NickName) { Nicknameother = null; }
+            }
+        }
+        
     }
+
     public void CreateRoom()
     {
         hostbtn.SetActive(false);
@@ -84,6 +112,9 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     public void JoinRoom()
     {
             PhotonNetwork.JoinRoom(RoomName.GetComponent<Text>().text);
+            hostform.SetActive(true);
+            RoomNameEnter.SetActive(false);
+            menubtn.swapmapinfinity();
     }
     public override void OnJoinedRoom()
     {
@@ -107,6 +138,7 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     {
         if (PhotonNetwork.InRoom)
         {
+            CounterPlayer.GetComponent<Text>().text = "";
             PhotonNetwork.LeaveRoom();
         }
     }

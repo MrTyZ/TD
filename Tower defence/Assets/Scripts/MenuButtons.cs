@@ -18,6 +18,8 @@ public class MenuButtons : MonoBehaviourPun
     public static int SelectArray=0;
     public static bool DebugMod = false;
     public static int trialsCounterEnd = 3;
+    public string Nick;
+    public GameObject NickInput;
 
 
     
@@ -60,8 +62,8 @@ public class MenuButtons : MonoBehaviourPun
 
 
     }
-      
-    
+
+
     public void swapmapinfinity()
     {
             GameObject.Find("MainMap").GetComponent<RawImage>().texture = Resources.Load<Texture>("Photo/" + MapArrayString[SelectArray]);
@@ -73,7 +75,13 @@ public class MenuButtons : MonoBehaviourPun
         {
             GameObject.Find("Map2").GetComponent<RawImage>().texture = Resources.Load<Texture>("Photo/" + MapArrayString[SelectArray + 1]);
         }
-         }
+    }
+    public void SaveNickname()
+    {
+        Nick = NickInput.GetComponent<InputField>().text;
+        PlayerPrefs.SetString("Nick", Nick);
+        PhotonNetwork.NickName = Nick;
+    }
     public void LeftSelectInfinity()
     {
         if (globalvariable.online)
@@ -81,10 +89,8 @@ public class MenuButtons : MonoBehaviourPun
         else {
             SelectArray--;
             if (SelectArray < 0) { SelectArray = countmap - 1; }
+            swapmapinfinity();
         }
-        
-       
-        swapmapinfinity();
         
     }
     [PunRPC]
@@ -92,6 +98,7 @@ public class MenuButtons : MonoBehaviourPun
     {
         SelectArray--;
         if (SelectArray < 0) { SelectArray = countmap - 1; }
+        swapmapinfinity();
     }
     public void RightSelectInfinity()
     {
@@ -100,9 +107,8 @@ public class MenuButtons : MonoBehaviourPun
         {
             SelectArray++;
             if (SelectArray > countmap - 1) { SelectArray = 0; }
+            swapmapinfinity();
         }
-        
-        swapmapinfinity();
        
     }
     [PunRPC]
@@ -110,6 +116,7 @@ public class MenuButtons : MonoBehaviourPun
     {
         SelectArray++;
         if (SelectArray > countmap - 1) { SelectArray = 0; }
+        swapmapinfinity();
     }
    
     public void Infinity()
